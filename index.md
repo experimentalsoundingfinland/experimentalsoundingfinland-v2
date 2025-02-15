@@ -6,4 +6,7 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 #
 layout: home
+title: Calendar
 ---
+
+**[Click here to add an event (Google form)](https://forms.gle/9Cb2oSwamWKdqRru8)**
