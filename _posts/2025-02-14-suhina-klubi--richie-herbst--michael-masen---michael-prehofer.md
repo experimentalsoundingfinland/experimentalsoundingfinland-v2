@@ -1,0 +1,15 @@
+---
+layout: post
+title: "Suhina Klubi: Richie Herbst, Michael Masen & Michael Prehofer"
+date: 2025-02-14T19:44:27+02:00
+event_start: 2025-02-05T20:00:00+02:00
+event_end: 2025-02-05T22:00:00+02:00
+venue: "YÖ Galleria"
+address: "Lönnrotinkatu 33, 00180 Helsinki"
+---
+
+Suhina Klubi serves as a platform for improvised and experimental music and sound art within Helsinki. During the year 2025 we present improvised music ensembles from Finland and abroad.  
+In the second edition of Suhina Klubi for the spring 2025, we are proud to host a trio Masen / Prehofer / Herbst.  
+  
+Suhina Klubi is supported by Kone foundation and city of Helsinki  
+Tickets 15€/8€
