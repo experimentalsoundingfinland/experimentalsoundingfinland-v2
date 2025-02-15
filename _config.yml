@@ -1,4 +1,4 @@
-title: Experimental Sounding Finland
+title: Experimental Sounding Finland V2
 author:
   name: libero mureddu
   email:
@@ -67,7 +67,7 @@ minima:
   social_links:
     - title: "RSS Feed"
       icon: rss
-      url: "/feed.xml"
+      url: "https://experimentalsoundingfinland.github.io/experimentalsoundingfinland-v2/feed.xml"
     - title: Mastodon
       icon: mastodon
       url: "https://mastodon.social/@experimentalsoundingfinland"
