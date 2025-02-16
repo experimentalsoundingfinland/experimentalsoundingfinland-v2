@@ -7,8 +7,6 @@ require 'net/http'
 require 'json'
 require 'date'
 require 'fileutils'
-require 'i18n'
-I18n.available_locales = [:en, :de, :fr, :es, :it, :pt, :nl, :sv, :fi, :da, :no]
 
 API_KEY = ENV["GOOGLE_API_KEY"]
 CALENDAR_ID = ENV["GOOGLE_CALENDAR_ID"]
@@ -24,7 +22,7 @@ events.each do |event|
   date = DateTime.now
   event_start = DateTime.parse(event['start']['dateTime'] || event['start']['date'])
   event_end = DateTime.parse(event['end']['dateTime'] || event['end']['date'])
-  title = I18n.transliterate(event['summary']).gsub(/[^0-9A-Za-z.\-]/, '-').downcase
+  title = event['summary'].gsub(/[^0-9A-Za-z.\-]/, '-').downcase
   filename = "_posts/#{date.strftime('%Y-%m-%d')}-#{title}.md"
   
   # Extract venue from the end of the description
