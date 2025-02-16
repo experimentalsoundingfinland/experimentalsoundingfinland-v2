@@ -1,10 +1,15 @@
+# To run the script locally: 
+# export GOOGLE_API_KEY=AIzaSyA8ibG6fO1SGlZilUaFrtQ-oFg0fQF2ksg
+# export GOOGLE_CALENDAR_ID=experimentalsoundingfinland@gmail.com
+# ruby path/to/update_posts.rb
+
 require 'net/http'
 require 'json'
 require 'date'
 require 'fileutils'
 
-API_KEY = 'AIzaSyA8ibG6fO1SGlZilUaFrtQ-oFg0fQF2ksg'
-CALENDAR_ID = 'experimentalsoundingfinland@gmail.com'
+API_KEY = ENV["GOOGLE_API_KEY"]
+CALENDAR_ID = ENV["GOOGLE_CALENDAR_ID"]
 url = URI("https://www.googleapis.com/calendar/v3/calendars/#{CALENDAR_ID}/events?singleEvents=true&key=#{API_KEY}")
 
 response = Net::HTTP.get(url)
