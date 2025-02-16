@@ -30,8 +30,5 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add _posts/
-          if ! git diff --cached --quiet; then
-            git commit -m "Update posts from calendar [skip ci]"
-            git push origin HEAD:main
-          else
-            echo "No changes to commit"
+          git diff --cached --quiet || git commit -m "Update posts from calendar [skip ci]"
+          git push origin HEAD:main
