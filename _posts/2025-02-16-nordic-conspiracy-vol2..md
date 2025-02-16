@@ -1,0 +1,25 @@
+---
+layout: post
+title: "Nordic Conspiracy Vol2."
+date: 2025-02-16T15:43:19+00:00
+event_start: 2025-02-09T18:00:00+02:00
+event_end: 2025-02-09T20:00:00+02:00
+venue: "Äänen Lumo"
+address: "Nokiantie 2-4, Helsinki"
+---
+
+Nordic Conspiracy is a series focusing on improvised music, aiming to organize concerts in the Nordic region and strengthen seamless cultural exchange in the field of experimental music.  
+  
+The second gathering features a international lineup of improvisers:  
+  
+Richie Herbst - live-electronics  
+Heli Hartikainen - saxophone  
+Jukka Kääriäinen - guitar  
+Michael Masen - saxophone  
+Teemu Mustonen - drums  
+Michael Prehofer - drums  
+Wilson Tanner Smith - cello  
+Livia Schweizer - flute  
+  
+Doors open at 5:45 PM, music starts at 6:00 PM  
+voluntary fee: 5-20€
