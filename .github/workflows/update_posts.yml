@@ -1,0 +1,38 @@
+name: Update Posts from Calendar
+
+on:
+push:
+branches: [ main ]
+schedule:
+- cron: '0 0 * * *'  # Runs daily at midnight UTC
+
+jobs:
+update-posts:
+runs-on: ubuntu-latest
+
+steps:
+  - name: Checkout Repository
+    uses: actions/checkout@v3
+
+  - name: Set Up Ruby
+    uses: ruby/setup-ruby@v1
+    with:
+      ruby-version: "3.0"  # Adjust if your script needs a different version
+
+  - name: Run Calendar Post Generator
+    run: ruby assets/rb/gcal_fetch_events.rb
+    env:
+      GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+      GOOGLE_CALENDAR_ID: ${{ secrets.GOOGLE_CALENDAR_ID }}
+
+  - name: Commit and Push Changes
+    run: |
+      git config --local user.email "github-actions[bot]@users.noreply.github.com"
+      git config --local user.name "github-actions[bot]"
+      git add _posts/
+      if ! git diff --cached --quiet; then
+        git commit -m "Update posts from calendar [skip ci]"
+        git push origin HEAD:main
+      else
+        echo "No changes to commit"
+      fi
