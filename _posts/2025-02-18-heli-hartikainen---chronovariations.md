@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Heli Hartikainen – CHRONOVARIATIONS"
+date: 2025-02-18T11:12:17+00:00
+event_start: 2024-10-27T19:00:00+02:00
+event_end: 2024-10-27T20:00:00+02:00
+venue: "Temppeliaukion kirkko"
+address: "Lutherinkatu 3, 00100 Helsinki"
+---
+
+CHRONOVARIATIONS on 3D-ääniteos tenorisaksofonille, live-elektroniikalle ja resonoiville metalliromuille. Hyödynnämme teoksessa elektromagneettisia aktuaattorikaiuttimia, jotka resonanssin avulla muuttavat romuttamolta pelastetut metallipellit ja -putket jännittäviksi äänilähteiksi, joiden äänellisiin ominaisuuksiin kuuluvat niin hienot yläsävelresonanssit kuin rajut särötkin.  
+  
+Levy on mainittu brittiläisessä The Guardianissa ja soinut kuululla NTS-kanavalla. Muun muassa näin siitä sanottiin Ylellä:  
+  
+”Ja millaista musiikkia se olikaan? Kauniita hälyääniä saksofonin läpistä, ilma virtauksesta, ja saksofonin kielityksestä. Outoja ääniä, jotka kiertävät tilaan ripustetuissa metalliromuissa, ja äänitetään vielä oudompina uudelleen. Levollista viipyilyä sävelten tai sävelikköjen ympärillä, ja kaikki taltioituna akustiikassa joka antaa äänelle ja kuulijalle kaiken tarvittavan tilan.  
+Ehdin kuunnella levyä melkein 15 minuuttia ennen kuin jouduin palaamaan lapsiperheen äänimaailmaan, ja se olikin paras 15 minuuttia pitkään aikaan – se oli puhdistava rituaali. Levysoitin, vinyyli ja äänen konkretia kiinnittivät minut tähän maailmaan, mutta musiikki vapautti minut siitä.”
