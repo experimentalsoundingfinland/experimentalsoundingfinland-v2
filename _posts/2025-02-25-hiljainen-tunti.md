@@ -1,0 +1,21 @@
+---
+layout: post
+title: "Hiljainen tunti"
+date: 2025-02-25T15:00:00+02:00
+event_start: 2025-02-25T15:00:00+02:00
+event_end: 2025-02-25T16:45:00+02:00
+venue: "Katve"
+address: "Mariankatu 15 B, Helsinki"
+---
+
+Lau Nau & Tanja Tiekso — hiljainen tunti  
+  
+Tervetuloa kuunteluiltapäivään Katve-tilaan.  
+  
+Teemme äänimeditaation ja tuotamme ja kuuntelemme hiljaisia ääniä. Ota mukaan jokin esine, jolla voit tuottaa aivan pieniä, hädin tuskin kuultavia ääniä.  
+  
+Osallistua voi kuka tahansa. Osallistuminen on ilmaista.  
+  
+Tanja Tiekso on musiikkitieteen dosentti ja kirjailija, jolla on diplomi Pauline Oliveroksen kehittämässä syväkuuntelussa.  
+  
+Laura Naukkarinen (Lau Nau) on säveltäjä, äänitaiteilija ja esiintyjä joka vetää kuukausittaista Äänen ja kuuntelun kerhoa Turussa.
