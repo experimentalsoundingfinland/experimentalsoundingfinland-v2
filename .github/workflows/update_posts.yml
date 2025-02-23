@@ -16,6 +16,8 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # Fetch all history for all tags and branches
 
       - name: Set Up Ruby
         uses: ruby/setup-ruby@v1
@@ -36,4 +38,5 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git add _posts/
           git diff --cached --quiet || git commit -m "Update posts from calendar [skip ci]"
+          git pull origin main --rebase
           git push origin HEAD:main
