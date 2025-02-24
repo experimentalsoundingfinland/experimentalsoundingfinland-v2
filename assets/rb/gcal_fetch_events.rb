@@ -36,12 +36,6 @@ events.each do |event|
   event_end = DateTime.parse(event['end']['dateTime'] || event['end']['date'])
   title = event['summary'].gsub(/[^0-9A-Za-z.\-]/, '-').downcase
   filename = "_posts/#{event_start.strftime('%Y-%m-%d')}-#{title}.md"
-  
-  # Check if file already exists
-  if File.exist?(filename)
-    puts "File already exists for event: #{event['summary']}"
-    next
-  end
 
   # Extract venue from the end of the description
   description = event['description'] || 'No description available.'
@@ -79,6 +73,36 @@ events.each do |event|
     #{description}
   CONTENT
 
-  File.write(filename, content)
-  puts "Generated file for event: #{event['summary']}"
+  # Check if file already exists
+  if File.exist?(filename)
+    existing_content = File.read(filename)
+
+    if existing_content == content
+      puts "File already exists for event: #{event['summary']}. No changes detected."
+      next
+    else
+      puts "File already exists for event: #{event['summary']}. Updating contents."
+      File.write(filename, content)
+    end
+  else
+    puts "Creating new file for event: #{event['summary']}"
+    File.write(filename, content)
+  end
+end
+
+# Delete files that don't match an event in the Google Calendar API response
+Dir.glob("_posts/*.md").each do |file|
+  filename = File.basename(file)
+  event_start = filename.split("-").first
+  title = filename.split("-").last.split(".md").first
+
+  existing_event = events.find do |event|
+    event_start == DateTime.parse(event['start']['dateTime'] || event['start']['date']).strftime('%Y-%m-%d')
+    title == event['summary'].gsub(/[^0-9A-Za-z.\-]/, '-').downcase
+  end
+
+  if existing_event.nil?
+    puts "Deleting file for event: #{title}"
+    File.delete(file)
+  end
 end
