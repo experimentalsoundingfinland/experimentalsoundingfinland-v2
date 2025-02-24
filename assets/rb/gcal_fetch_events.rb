@@ -1,6 +1,6 @@
   # To run the script locally: 
-  # export GOOGLE_API_KEY=AIzaSyA8ibG6fO1SGlZilUaFrtQ-oFg0fQF2ksg
-  # export GOOGLE_CALENDAR_ID=experimentalsoundingfinland@gmail.com
+  # export GOOGLE_API_KEY=
+  # export GOOGLE_CALENDAR_ID=
   # ruby path/to/update_posts.rb
 
   require 'net/http'
