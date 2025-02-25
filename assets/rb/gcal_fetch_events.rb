@@ -3,7 +3,7 @@
   # export GOOGLE_CALENDAR_ID=
   # ruby path/to/update_posts.rb
 
-require 'net/http'
+  require 'net/http'
 require 'json'
 require 'date'
 require 'fileutils'
@@ -80,16 +80,21 @@ events.each do |event|
     #{description}
   CONTENT
 
-  # Check if file already exists
-  if File.exist?(filename)
-    existing_content = File.read(filename)
+  # Check if a file already exists for this event ID
+  existing_file = Dir.glob("_posts/*").find do |file|
+    file_id = File.basename(file).split('-').last.chomp('.md')  # Extract the ID from the filename
+    file_id == event['id'] || file_id == event['id'][0...8]  # Match against the full ID or the first 8 characters
+  end
+
+  if existing_file
+    existing_content = File.read(existing_file)
 
     if existing_content == content
       puts "File already exists for event: #{event['summary']}. No changes detected."
       next
     else
       puts "File already exists for event: #{event['summary']}. Updating contents."
-      File.write(filename, content)
+      File.write(existing_file, content)
     end
   else
     puts "Creating new file for event: #{event['summary']}"
@@ -97,15 +102,4 @@ events.each do |event|
   end
 end
 
-# Delete files that don't match an event in the Google Calendar API response
-Dir.glob("_posts/*.md").each do |file|
-  filename = File.basename(file)
-  event_id = filename.chomp('.md').split('-').last  # Get the event ID from the filename
-
-  existing_event = events.find { |event| event['id'][0...8] == event_id || event['id'] == event_id }
-
-  if existing_event.nil?
-    puts "Deleting file for event ID: #{event_id}"
-    File.delete(file)
-  end
-end
+#
