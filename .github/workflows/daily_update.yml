@@ -3,6 +3,7 @@ name: Daily Full Website Update
 on:
   schedule:
     - cron: '0 23 * * *'  # Runs every day at 11 PM UTC (2 AM EET / 1 AM EEST)
+  workflow_dispatch:  # Allows manual triggering
 
 permissions:
   contents: write
