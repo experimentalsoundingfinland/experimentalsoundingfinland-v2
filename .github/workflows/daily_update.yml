@@ -30,6 +30,11 @@ jobs:
           gem install bundler  # Install Bundler if not already installed
           bundle install        # Install the gems specified in your Gemfile
 
+      - name: Debug Jekyll Version
+        run: |
+          echo "JEKYLL_VERSION: $JEKYLL_VERSION"
+          gem list
+
       - name: Run Calendar Post Generator
         run: ruby assets/rb/gcal_fetch_events.rb
         env:
@@ -37,7 +42,8 @@ jobs:
           GOOGLE_CALENDAR_ID: ${{ secrets.GOOGLE_CALENDAR_ID }}
 
       - name: Build Jekyll Site
-        run: bundle exec jekyll build
+        run: |
+          bundle exec jekyll build
 
       - name: Commit and Push Changes
         env:
