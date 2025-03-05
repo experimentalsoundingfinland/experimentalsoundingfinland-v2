@@ -23,6 +23,13 @@ jobs:
         with:
           ruby-version: "3.0"  # Adjust if your script needs a different version
 
+      - name: Install Dependencies
+        env:
+          JEKYLL_VERSION: "~> 3.9"  # Set the Jekyll version you want to use
+        run: |
+          gem install bundler  # Install Bundler if not already installed
+          bundle install        # Install the gems specified in your Gemfile
+
       - name: Run Calendar Post Generator
         run: ruby assets/rb/gcal_fetch_events.rb
         env:
