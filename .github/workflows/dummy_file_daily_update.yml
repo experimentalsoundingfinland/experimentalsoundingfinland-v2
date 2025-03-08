@@ -29,9 +29,12 @@ jobs:
           git add dummy.txt
           git diff --cached --quiet || git commit -m "Trigger daily build with dummy file [skip ci]"
 
-      - name: Pull and Push Changes
+      - name: Pull Changes
+        run: |
+          git pull origin main || echo "No changes to pull"
+
+      - name: Push Changes
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git pull origin main --rebase
           git push origin HEAD:main
