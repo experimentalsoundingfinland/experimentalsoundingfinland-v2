@@ -24,7 +24,7 @@ if events.nil? || events.empty?
 end
 
 # Ensure the _calendar_ics directory exists
-FileUtils.mkdir_p('_calendar_ics')
+FileUtils.mkdir_p('calendar_ics')
 
 ics_content = "BEGIN:VCALENDAR\n"
 ics_content += "VERSION:2.0\n"
@@ -47,6 +47,6 @@ end
 
 ics_content += "END:VCALENDAR\n"
 
-# Write the ICS content to a file in the _calendar_ics directory
-File.write('_calendar_ics/events.ics', ics_content)
-puts "ICS file generated: _calendar_ics/events.ics"
+# Write the ICS content to a file in the calendar_ics directory
+File.write('calendar_ics/events.ics', ics_content)
+puts "ICS file generated: calendar_ics/events.ics"
