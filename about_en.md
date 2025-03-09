@@ -59,6 +59,7 @@ Sivusto on vapaaehtoisvoimin pyörivä palvelu - yritämme vastata mahdollisimma
 
 Sivun keskiössä oleva kalenteri, lista tapahtumapaikoista ja kaikki sivun lomakkeet on toteutettu Googlen ilmaistyökaluilla. Sivu on vielä toistaiseksi hostattuna Githubissa. Lomakkeet on tarkoitus korvata vastaavanlaisilla open-source vaihtoehdoilla ja sivusto tullaan siirtämään EU:ssa sijaitsevalle palvelimelle niin pian kuin mahdollista.
 
+---
 
 ## About
 This website offers a **[calendar](index.md)** for the activities of the **[creative sonic communities](#rules-and-criteria)** active in Finland.
