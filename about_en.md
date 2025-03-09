@@ -5,7 +5,7 @@ permalink: /about_en/
 image: https://experimentalsoundingfinland.github.io/assets/OG_Image.png
 ---
 
-[In English](#about)
+[English version below](#about)
 
 ## Mikä?
 
