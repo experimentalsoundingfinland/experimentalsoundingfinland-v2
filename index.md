@@ -11,4 +11,4 @@ title: Calendar
 
 **[Click here to add an event (Google form)](https://forms.gle/9Cb2oSwamWKdqRru8)**
 
-**[Download the calendar in ICS format)](/_calendar_ics/events.ics)**
+**[Download the calendar in ICS format)](/experimentalsoundingfinland-v2/_calendar_ics/events.ics)**
