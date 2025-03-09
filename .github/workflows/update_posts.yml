@@ -30,19 +30,13 @@ jobs:
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
           GOOGLE_CALENDAR_ID: ${{ secrets.GOOGLE_CALENDAR_ID }}
 
-      - name: Run ICS Generator
-        run: ruby assets/rb/generate_ics.rb
-        env:
-          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
-          GOOGLE_CALENDAR_ID: ${{ secrets.GOOGLE_CALENDAR_ID }}
-
       - name: Commit and Push Changes
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add _posts/ calendar_ics/events.ics  # Include the ICS file in the commit
+          git add _posts/
           git diff --cached --quiet || git commit -m "Update posts from calendar [skip ci]"
           git pull origin main --rebase
           git push origin HEAD:main
