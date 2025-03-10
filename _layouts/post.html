@@ -13,6 +13,9 @@ layout: base
         <a href="https://www.google.com/maps/search/?api=1&query={{ page.address | uri_escape }}" target="_blank">{{ page.address }}</a>
       </span>
     </p>
+    <p class="event-ics">
+      <a href="{{ site.baseurl }}/ics/{{ page.date | date: "%Y-%m-%d" }}-{{ page.id }}.ics" download>Download ICS file</a>
+    </p>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
