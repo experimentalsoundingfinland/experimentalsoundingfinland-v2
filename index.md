@@ -11,4 +11,4 @@ title: Calendar
 
 **[Click here to add an event (Google form)](https://forms.gle/9Cb2oSwamWKdqRru8)**
 
-[Past events](https://experimentalsoundingfinland.github.io/experimentalsoundingfinland-v2/past_events)
+**[Past events](https://experimentalsoundingfinland.github.io/experimentalsoundingfinland-v2/past_events)**
