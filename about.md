@@ -1,7 +1,6 @@
 ---
 layout: page
-title: About (EN)
-permalink: /about_en/
+title: About (FI-EN)
 image: https://experimentalsoundingfinland.github.io/assets/OG_Image.png
 ---
 
