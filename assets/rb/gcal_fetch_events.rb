@@ -79,6 +79,7 @@ events.each do |event|
     venue: "#{venue}"
     address: "#{event['location'] || 'TBD'}"
     ics_file: "#{date_str}-#{id_portion}.ics"
+    created_date: #{event['created']}
     ---
   
     #{description}
