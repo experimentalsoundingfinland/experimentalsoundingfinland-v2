@@ -28,8 +28,10 @@ if events.nil? || events.empty?
   exit 0
 end
 
-# Ensure the _posts and ics directories exist
+# Ensure the _posts directory exists
 FileUtils.mkdir_p('_posts')
+
+# Ensure the ics directory exists
 FileUtils.mkdir_p('ics')
 
 events.each do |event|
@@ -44,7 +46,6 @@ events.each do |event|
   id_portion = event['id'] if id_portion.length < id_length  # Use the full ID if it's shorter
 
   filename = "_posts/#{date_str}-#{id_portion}.md"  # Combine date and ID portion
-  ics_filename = "ics/#{date_str}-#{id_portion}.ics"
 
   # Extract venue from the end of the description
   description = event['description'] || 'No description available.'
@@ -82,71 +83,102 @@ events.each do |event|
     #{description}
   CONTENT
 
-  # Generate ICS file for the event
-  ics_content = "BEGIN:VCALENDAR\n"
-  ics_content += "VERSION:2.0\n"
-  ics_content += "CALSCALE:GREGORIAN\n"
-  ics_content += "METHOD:PUBLISH\n"
-  ics_content += "BEGIN:VEVENT\n"
-  ics_content += "UID:#{event['id']}\n"
-  ics_content += "DTSTART;TZID=UTC:#{event_start.strftime('%Y%m%dT%H%M%SZ')}\n"
-  ics_content += "DTEND;TZID=UTC:#{event_end.strftime('%Y%m%dT%H%M%SZ')}\n"
-  ics_content += "SUMMARY:#{event['summary']}\n"
-  ics_content += "DESCRIPTION:#{venue}\n#{description}\n"
-  ics_content += "LOCATION:#{event['location'] || 'TBD'}\n"
-  ics_content += "END:VEVENT\n"
-  ics_content += "END:VCALENDAR\n"
+  # Generate ICS file
+  ics_content = <<~ICS
+    BEGIN:VCALENDAR
+    VERSION:2.0
+    PRODID:-//#{title}//NONSGML v1.0//EN
+    BEGIN:VEVENT
+    UID:#{event['id']}
+    DTSTART:#{event_start.strftime('%Y%m%dT%H%M%SZ')}
+    DTEND:#{event_end.strftime('%Y%m%dT%H%M%SZ')}
+    SUMMARY:#{event['summary']}
+    DESCRIPTION:#{description}
+    LOCATION:#{event['location'] || 'TBD'}
+    END:VEVENT
+    END:VCALENDAR
+  ICS
 
-    # Check if a file already exists for this event ID
-    existing_file = Dir.glob("_posts/*").find do |file|
-      file_id = File.basename(file).split('-').last.chomp('.md')  # Extract the ID from the filename
-      file_id == event['id'] || file_id == event['id'][0...8]  # Match against the full ID or the first 8 characters
-    end
-  
-    if existing_file
-      existing_content = File.read(existing_file)
-  
-      if existing_content == content
-        puts "File already exists for event: #{event['summary']}. No changes detected."
-        next
+  ics_filename = "ics/#{date_str}-#{id_portion}.ics"
+  File.write(ics_filename, ics_content)
+
+  # Check if a file already exists for this event ID
+  existing_file = Dir.glob("_posts/*").find do |file|
+    file_id = File.basename(file).split('-').last.chomp('.md')  # Extract the ID from the filename
+    file_id == event['id'] || file_id == event['id'][0...8]  # Match against the full ID or the first 8 characters
+  end
+
+  if existing_file
+    existing_content = File.read(existing_file)
+
+    if existing_content == content
+      puts "File already exists for event: #{event['summary']}. No changes detected."
+      # Also check if the ICS file exists and has the same content
+      existing_ics_file = Dir.glob("ics/*").find do |file|
+        file_id = File.basename(file).split('-').last.chomp('.ics')  # Extract the ID from the filename
+        file_id == event['id'] || file_id == event['id'][0...8]  # Match against the full ID or the first 8 characters
+      end
+
+      if existing_ics_file
+        existing_ics_content = File.read(existing_ics_file)
+
+        if existing_ics_content == ics_content
+          puts "ICS file already exists for event: #{event['summary']}. No changes detected."
+        else
+          puts "ICS file already exists for event: #{event['summary']}. Updating contents."
+          File.write(ics_filename, ics_content)
+        end
       else
-        puts "File already exists for event: #{event['summary']}. Updating contents."
-        File.write(existing_file, content)
+        puts "Creating new ICS file for event: #{event['summary']}"
+        File.write(ics_filename, ics_content)
       end
     else
-      puts "Creating new file for event: #{event['summary']}"
-      File.write(filename, content)
+      puts "File already exists for event: #{event['summary']}. Updating contents."
+      File.write(existing_file, content)
+      # Also update the ICS file
+      existing_ics_file = Dir.glob("ics/*").find do |file|
+        file_id = File.basename(file).split('-').last.chomp('.ics')  # Extract the ID from the filename
+        file_id == event['id'] || file_id == event['id'][0...8]  # Match against the full ID or the first 8 characters
+      end
+
+      if existing_ics_file
+        File.write(existing_ics_file, ics_content)
+      else
+        File.write(ics_filename, ics_content)
+      end
     end
-  
-    # Write the ICS file
+  else
+    puts "Creating new file for event: #{event['summary']}"
+    File.write(filename, content)
+    puts "Creating new ICS file for event: #{event['summary']}"
     File.write(ics_filename, ics_content)
   end
-  
-  # Delete files that don't match an event in the Google Calendar API response
-  Dir.glob("_posts/*.md").each do |file|
-    filename = File.basename(file)
-    file_id = filename.split('-').last.chomp('.md')  # Extract the ID from the filename
-  
-    # Check if the file ID matches any event ID
-    existing_event = events.find { |event| event['id'] == file_id || event['id'][0...8] == file_id }
-  
-    if existing_event.nil?
-      puts "Deleting file for event ID: #{file_id}"
-      File.delete(file)
-    end
+end
+
+# Delete files that don't match an event in the Google Calendar API response
+Dir.glob("_posts/*.md").each do |file|
+  filename = File.basename(file)
+  file_id = filename.split('-').last.chomp('.md')  # Extract the ID from the filename
+
+  # Check if the file ID matches any event ID
+  existing_event = events.find { |event| event['id'] == file_id || event['id'][0...8] == file_id }
+
+  if existing_event.nil?
+    puts "Deleting file for event ID: #{file_id}"
+    File.delete(file)
   end
-  
-  # Delete ICS files that don't match an event in the Google Calendar API response
-  Dir.glob("ics/*.ics").each do |file|
-    filename = File.basename(file)
-    file_id = filename.split('-').last.chomp('.ics')  # Extract the ID from the filename
-  
-    # Check if the file ID matches any event ID
-    existing_event = events.find { |event| event['id'] == file_id || event['id'][0...8] == file_id }
-  
-    if existing_event.nil?
-      puts "Deleting ICS file for event ID: #{file_id}"
-      File.delete(file)
-    end
+end
+
+# Also delete ICS files that don't match an event
+Dir.glob("ics/*.ics").each do |file|
+  filename = File.basename(file)
+  file_id = filename.split('-').last.chomp('.ics')  # Extract the ID from the filename
+
+  # Check if the file ID matches any event ID
+  existing_event = events.find { |event| event['id'] == file_id || event['id'][0...8] == file_id }
+
+  if existing_event.nil?
+    puts "Deleting ICS file for event ID: #{file_id}"
+    File.delete(file)
   end
-  
+end
