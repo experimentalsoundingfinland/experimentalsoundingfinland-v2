@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//heli-hartikainen---chronovariations//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2ctared96a4idi7ua3ms1jq5qs
+DTSTART:20241027T190000Z
+DTEND:20241027T200000Z
+SUMMARY:Heli Hartikainen – CHRONOVARIATIONS
+DESCRIPTION:CHRONOVARIATIONS on 3D-ääniteos tenorisaksofonille, live-elektroniikalle ja resonoiville metalliromuille. Hyödynnämme teoksessa elektromagneettisia aktuaattorikaiuttimia, jotka resonanssin avulla muuttavat romuttamolta pelastetut metallipellit ja -putket jännittäviksi äänilähteiksi, joiden äänellisiin ominaisuuksiin kuuluvat niin hienot yläsävelresonanssit kuin rajut särötkin.  
+  
+Levy on mainittu brittiläisessä The Guardianissa ja soinut kuululla NTS-kanavalla. Muun muassa näin siitä sanottiin Ylellä:  
+  
+”Ja millaista musiikkia se olikaan? Kauniita hälyääniä saksofonin läpistä, ilma virtauksesta, ja saksofonin kielityksestä. Outoja ääniä, jotka kiertävät tilaan ripustetuissa metalliromuissa, ja äänitetään vielä oudompina uudelleen. Levollista viipyilyä sävelten tai sävelikköjen ympärillä, ja kaikki taltioituna akustiikassa joka antaa äänelle ja kuulijalle kaiken tarvittavan tilan.  
+Ehdin kuunnella levyä melkein 15 minuuttia ennen kuin jouduin palaamaan lapsiperheen äänimaailmaan, ja se olikin paras 15 minuuttia pitkään aikaan – se oli puhdistava rituaali. Levysoitin, vinyyli ja äänen konkretia kiinnittivät minut tähän maailmaan, mutta musiikki vapautti minut siitä.”
+LOCATION:Lutherinkatu 3, 00100 Helsinki
+END:VEVENT
+END:VCALENDAR
