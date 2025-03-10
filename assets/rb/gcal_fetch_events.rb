@@ -73,6 +73,7 @@
       date: #{event_start.iso8601}
       event_start: #{event_start.iso8601}
       event_end: #{event_end.iso8601}
+      event_added: #{event['updated'].iso8601}
       venue: "#{venue}"
       address: "#{event['location'] || 'TBD'}"
       ---

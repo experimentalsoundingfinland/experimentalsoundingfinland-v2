@@ -22,7 +22,7 @@ layout: base
   <footer class="post-footer">
     <p class="post-meta">
       Event added: 
-      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+      <time class="dt-published" datetime="{{ page.event_added | date_to_xmlschema }}" itemprop="datePublished">
         {{ page.date | date: "%d.%m.%y" }}
       </time>
       {%- if page.modified_date -%}
