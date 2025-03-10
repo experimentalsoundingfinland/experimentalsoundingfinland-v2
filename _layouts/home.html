@@ -3,10 +3,6 @@ layout: base
 ---
 
 <div class="home">
-  <!-- {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%} -->
-
   {{ content }}
 
   {% if site.paginate %}
@@ -17,21 +13,17 @@ layout: base
 
   {%- assign now = site.time | date: "%s" -%}
   {%- assign future_posts = "" | split: "" -%}
-  {%- assign past_posts = "" | split: "" -%}
 
   {%- for post in posts -%}
     {%- assign post_date = post.event_start | date: "%s" | to_i -%}
     {%- if post_date > now -%}
       {%- assign future_posts = future_posts | push: post -%}
-    {%- else -%}
-      {%- assign past_posts = past_posts | push: post -%}
     {%- endif -%}
   {%- endfor -%}
 
   {%- assign future_posts = future_posts | sort: "event_start" -%}
-  {%- assign past_posts = past_posts | sort: "event_start" | reverse -%}
 
-  {%- if future_posts.size > 0 or past_posts.size > 0 -%}
+  {%- if future_posts.size > 0 -%}
     {%- if page.list_title -%}
       <h2 class="post-list-heading">{{ page.list_title }}</h2>
     {%- endif -%}
@@ -65,38 +57,9 @@ layout: base
       </li>
       {%- endfor -%}
     </ul>
-    {%- if past_posts.size > 0 -%}
-      <h1 class="post-list-heading">Past Events</h1>
-      <ul class="post-list">
-        {%- for post in past_posts -%}
-        <li class="event-post">
-          <div class="event-row">
-            <div class="event-details home-event-details">
-              <p class="event-date">{{ post.event_start | date: date_format }}</p>
-              <p class="event-time">{{ post.event_start | date: weekday_format }}, {{ post.event_start | date: time_format }} - {{ post.event_end | date: time_format }}</p>
-              <p class="event-venue">{{ post.venue }}</p>
-              <p class="event-address">
-                <a href="https://www.google.com/maps/search/?api=1&query={{ post.address | uri_escape }}" target="_blank">{{ post.address }}</a>
-              </p>
-            </div>
-            <div class="event-info">
-              <h3>
-                <a class="post-link" href="{{ post.url | relative_url }}">
-                  {{ post.title | escape }}
-                </a>
-              </h3>
-              <p>{{ post.content | truncatewords: 30 }}</p>
-              {%- if site.minima.show_excerpts -%}
-                {{ post.excerpt }}
-              {%- endif -%}
-            </div>
-          </div>
-        </li>
-        {%- endfor -%}
-      </ul>
-    {%- endif -%}
+  {%- endif -%}
 
-    {% if site.paginate %}
+  {% if site.paginate %}
   <div class="pager">
     <ul class="pagination">
     {%- if paginator.previous_page %}
@@ -112,6 +75,5 @@ layout: base
     {%- endif %}
     </ul>
   </div>
-{%- endif %}
-{%- endif %}
+  {%- endif %}
 </div>
