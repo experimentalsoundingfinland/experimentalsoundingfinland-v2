@@ -87,18 +87,18 @@ events.each do |event|
 
   # Generate ICS file
   ics_content = <<~ICS
-    BEGIN:VCALENDAR
-    VERSION:2.0
-    PRODID:-//#{title}//NONSGML v1.0//EN
-    BEGIN:VEVENT
-    UID:#{event['id']}
-    DTSTART:#{event_start.strftime('%Y%m%dT%H%M%SZ')}
-    DTEND:#{event_end.strftime('%Y%m%dT%H%M%SZ')}
-    SUMMARY:#{event['summary']}
-    DESCRIPTION:#{description}
-    LOCATION:#{event['location'] || 'TBD'}
-    END:VEVENT
-    END:VCALENDAR
+  BEGIN:VCALENDAR
+  VERSION:2.0
+  PRODID:-//#{title}//NONSGML v1.0//EN
+  BEGIN:VEVENT
+  UID:#{event['id']}
+  DTSTART;TZID=Europe/Helsinki:#{event_start.strftime('%Y%m%dT%H%M%S')}
+  DTEND;TZID=Europe/Helsinki:#{event_end.strftime('%Y%m%dT%H%M%S')}
+  SUMMARY:#{event['summary']}
+  DESCRIPTION:#{description}
+  LOCATION:#{event['location'] || 'TBD'}
+  END:VEVENT
+  END:VCALENDAR
   ICS
 
   ics_filename = "ics/#{date_str}-#{id_portion}.ics"
