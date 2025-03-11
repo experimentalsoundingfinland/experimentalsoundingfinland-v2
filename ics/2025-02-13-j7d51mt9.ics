@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//interventio-1--anla-courtis--tomutonttu//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:j7d51mt9hc5tm9vib6vhdninr8
+DTSTART;TZID=Europe/Helsinki:20250213T160000
+DTEND;TZID=Europe/Helsinki:20250213T180000
+SUMMARY:Interventio 1: Anla Courtis, Tomutonttu
+DESCRIPTION:Circle’s PISTE exhibition at the Pori Art Museum will also serve as a venue for a series of musical visits and interventions, kind of artistic intermissions. The series of performances will begin on Thursday 13 February at 16:00 with Anla Courtis and Tomutonttu. The artists have been invited by Jussi Lehtisalo of Circle and Ektro Records. The performances are included in the price of the museum ticket.  
+  
+Anla Courtis is a musician and composer from Buenos Aires. Courtis’ experimental music combines sound samples and manipulations with both traditional and special, self-made, instruments. Courtis has released hundreds of recordings as a solo artist and in numerous collaborative projects. He is a founding member of the Argentinian 90’s cult band Reynols.  
+  
+Tomutonttu is a solo project by Tampere-based multi-artist Jan Anderzén. Anderzén, a visual artist working with textiles, drawings, prints and sound sculptures, is as a musician best known for his work with the band Kemialliset Ystävät, founded in 1995. Tomutonttu’s music is a collage of different sounds, sometimes recognisable from the animal world, and electronic experimental music.
+LOCATION:Eteläranta, Pori
+END:VEVENT
+END:VCALENDAR

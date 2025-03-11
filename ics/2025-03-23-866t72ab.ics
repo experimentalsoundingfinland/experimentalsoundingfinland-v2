@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//rahina-klubi--laponia-improvisations//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:866t72abklj9j069grnldikov8
+DTSTART;TZID=Europe/Helsinki:20250323T160000
+DTEND;TZID=Europe/Helsinki:20250323T173000
+SUMMARY:Rahina-klubi: LAPONIA IMPROVISATIONS
+DESCRIPTION:Rahina-klubi: LAPONIA IMPROVISATIONS  
+  
+The Laponia Improvisations collective will perform a body of work in which the composed and the improvised merge together.  The materials in this piece of  work were created during Pauli Lyytinen's improvisation course in early 2025. The theme of the course was complex rhythms and strong melodies as a source of improvisation. The concert will premiere compositions by each performer.  
+  
+Joona Hulmi - piano  
+Santeri Kaipiainen - vocals  
+Jaakko Kuikka - saxophone  
+Juha Rautio - guitar  
+Alejandro Sanchez - guitar  
+Pauli Lyytinen - director
+LOCATION:Haapaniemenkatu 14, 00530 Helsinki
+END:VEVENT
+END:VCALENDAR

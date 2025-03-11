@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//metric-2025--4--feeniks-reborn//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:pfi3j8r0qrpk3cjk04p0ufvb68
+DTSTART;TZID=Europe/Helsinki:20250220T190000
+DTEND;TZID=Europe/Helsinki:20250220T210000
+SUMMARY:METRIC 2025 #4: Feeniks reborn
+DESCRIPTION:This METRIC concert will be held in the R-talo famous Feeniks Club. The relaxed atmosphere will give a platform for the METRIC students to perform, experiment, stretch boundaries. Extremely importantly for the METRIC experience, this evening will give them the chance to get to know each other, discuss, create connections.   
+  
+[https://www.uniarts.fi/tapahtumat/metric-2025-feeniks-reborn/](https://www.uniarts.fi/tapahtumat/metric-2025-feeniks-reborn/)  
+  
+METRIC is an international network of several leading European conservatoires, dedicated to advancing improvisation teaching in higher music education.   
+  
+[http://metricimpro.eu](http://metricimpro.eu)  
+  
+Further information: Anna Huuskonen-Kuhlefelt, anna[DOT]huuskonen-kuhlefelt[AT]uniarts[DOT]fi
+LOCATION:Pohjoinen Rautatiekatu 9, Helsinki
+END:VEVENT
+END:VCALENDAR

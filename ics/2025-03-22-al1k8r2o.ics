@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//fantasia-6//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:al1k8r2otjcoh7v7vlan3lomr0
+DTSTART;TZID=Europe/Helsinki:20250322T190000
+DTEND;TZID=Europe/Helsinki:20250322T220000
+SUMMARY:FANTASIA 6
+DESCRIPTION:SIRPA KALLA  
+ILPO NUMMINEN  
+ELATU NESSA  
+  
+Mental Alaska and El Fant bring experimental music to Market Square!  
+****************  
+  
+Sirpa Kalla was born in 2024 in Portugal, in the dunes of Adraga. She thrives on unintentionally generated sounds, the atmosphere of old industrial areas and the roughness and rasp of rust and debris. Sirpa Kalla cuts random loops from cassettes found in the streets and abandoned buildings, combining them with minimalist synths and contact mic'd objects.  
+  
+Ilpo Numminen is a synthesizer artist who draws inspiration from the craftsman-like spirit of the early days of electronic music. Stylistically this can mean, for example, cosmic sequence music or anything between simple sounds and multi-layered chaos.  
+  
+Rusto Myllylahti's solo project Elatu Nessa is a combination of homemade loops, psychedelic guitars, birdsong, human voice, dreaming, poor data and naps. It's the soundtrack to desert dreams, snowy fields and imaginary computers.
+LOCATION:Katariinankatu 3
+END:VEVENT
+END:VCALENDAR

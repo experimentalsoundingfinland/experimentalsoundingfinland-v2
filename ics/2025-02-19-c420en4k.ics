@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//metric-2025--3--electronics-and-improvisations//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:c420en4kdmkifluqbuelehst4g
+DTSTART;TZID=Europe/Helsinki:20250219T193000
+DTEND;TZID=Europe/Helsinki:20250219T204500
+SUMMARY:METRIC 2025 #3: Electronics and improvisations
+DESCRIPTION:Thanks to the presence in the METRIC network of multiple teachers active in working with electronic tools, in a plethora of approaches, this concert will showcase different approaches, from live digital processing of acoustic sounds, electroacoustic ensembles, generative improvisations, and more…  
+  
+[https://www.uniarts.fi/tapahtumat/metric-2025-electronics-and-improvisations/](https://www.uniarts.fi/tapahtumat/metric-2025-electronics-and-improvisations/)  
+  
+METRIC is an international network of several leading European conservatoires, dedicated to advancing improvisation teaching in higher music education.   
+  
+[http://metricimpro.eu](http://metricimpro.eu)  
+  
+Further information: Anna Huuskonen-Kuhlefelt, anna[DOT]huuskonen-kuhlefelt[AT]uniarts[DOT]fi
+LOCATION:Mannerheimintie 13a, Helsinki
+END:VEVENT
+END:VCALENDAR
