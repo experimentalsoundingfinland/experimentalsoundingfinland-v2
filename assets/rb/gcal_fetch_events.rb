@@ -73,7 +73,7 @@ events.each do |event|
     ---
     layout: post
     title: "#{event['summary']}"
-    date: #{event['created']}
+    date: #{event_start.iso8601}
     event_start: #{event_start.iso8601}
     event_end: #{event_end.iso8601}
     venue: "#{venue}"
