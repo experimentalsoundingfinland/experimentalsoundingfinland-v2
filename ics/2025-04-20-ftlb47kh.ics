@@ -6,18 +6,8 @@ UID:ftlb47khlistidbc3lrjficp00
 DTSTART;TZID=Europe/Helsinki:20250420T180000
 DTEND;TZID=Europe/Helsinki:20250420T200000
 SUMMARY:Improvised music @ El FAnt: Les Marquises // Lauri Hyvärinen & Jukka Kääriäinen
-DESCRIPTION:Improvised music Sunday session at El Fant continues. El Fant hosts a concert of improvised music featuring two lineups of seasoned experts in experimental and improvised music! The event has suggested donation of 5-15€, music will start at 6 PM!  
-  
-Line-up:  
-  
-1st set  
-Lauri Hyvärinen - guitar  
-Jukka Kääriäinen - guitar  
-  
-2nd set Les Marquises  
-Emilie Skrijelj - accordian & live electronics  
-Tom Malmendier - drums
-LOCATION:"Katariinankatu 3, 00170 Helsinki"
+DESCRIPTION:El Fant
+LOCATION:Katariinankatu 3, 00170 Helsinki
 URL:https://experimentalsoundingfinland.github.io/experimentalsoundingfinland-v2/2025-04-20/ftlb47kh.html
 END:VEVENT
 END:VCALENDAR

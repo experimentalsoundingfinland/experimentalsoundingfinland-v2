@@ -7,7 +7,7 @@ DTSTART;TZID=Europe/Helsinki:20250308T150000
 DTEND;TZID=Europe/Helsinki:20250308T170000
 SUMMARY:Test
 DESCRIPTION:Test
-LOCATION:"Test"
+LOCATION:Test
 URL:https://experimentalsoundingfinland.github.io/experimentalsoundingfinland-v2/2025-03-08/jm2ib0co.html
 END:VEVENT
 END:VCALENDAR

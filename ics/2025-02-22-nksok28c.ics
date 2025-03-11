@@ -6,39 +6,8 @@ UID:nksok28ccjfloef16o54idnsfo
 DTSTART;TZID=Europe/Helsinki:20250222T190000
 DTEND;TZID=Europe/Helsinki:20250222T213000
 SUMMARY:ÄäMET­RIC (METRIC 2025 #6)
-DESCRIPTION:Join us for an exceptional concert at the Äänen Lumo space in Vallila, featuring an international line up of METRIC teachers together with members of the Finnish improvisation community.  
-  
-Corinna Eikmeier (Lübeck), cello  
-Annika Fuhrmann (Helsinki), voice  
-Pedro Fernández (Barcelona), electronics  
-Heli Hartikainen (Helsinki), saxophone  
-Gerardo Gozzi (London), saxophone  
-Lauri Hyvärinen (Helsinki), el. guitar  
-Nicola Hein (Lübeck), electronics  
-Sirpa Jokinen (Helsinki), electronics  
-Charlotte Hug (Zurich, Lucerne), viola  
-Jukka Kääriäinen (Helsinki), el. guitar  
-Diego Kohn (Zurich), viola  
-Vesa Lehko (Helsinki), saxophone  
-Alistair MacDonald (Glasgow), live electronics  
-Gon Muruaga (Helsinki), el. guitar  
-Arnas Mikalkenas (Vilnius), piano, drums  
-Teemu Mustonen (Helsinki), drums  
-Liudas Mockūnas (Vilnius), saxophone  
-Juha Rautio (Espoo), el. guitar / electronics  
-Melik Turunen (Helsinki), electronics  
-  
-METRIC is an international network of several leading European conservatoires, dedicated to advancing improvisation teaching in higher music education. While many of its members are active in the broader improvisation scene, this concert aims to connect with the Finnish creative community, especially those not affiliated with any institution, which is often the case in free improvisation communities. The Sibelius Academy is a member of the Metric network.  
-  
-Äänen Lumo association promotes experimental sonic arts in Finland, and faciliates interaction, communality and exchange between artists, associations and collectives.  
-  
-Äänen Lumo Space is a new community-driven, low threshold, DIY space for presenting, practicing, and encountering sound based art practices.   
-  
-[http://metricimpro.eu](http://metricimpro.eu)  
-[http://aanenlumo.com](http://aanenlumo.com)  
-  
-Further information: Anna Huuskonen-Kuhlefelt, anna[DOT]huuskonen-kuhlefelt[AT]uniarts[DOT]fi
-LOCATION:"Nokiantie 2-4, Helsinki"
+DESCRIPTION:Äänen Lumo
+LOCATION:Nokiantie 2-4, Helsinki
 URL:https://experimentalsoundingfinland.github.io/experimentalsoundingfinland-v2/2025-02-22/nksok28c.html
 END:VEVENT
 END:VCALENDAR
