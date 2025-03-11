@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//nordic-conspiracy-vol2.//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:t24a28t3pgigb68jfqbjh5ckeo
+DTSTART;TZID=Europe/Helsinki:20250209T180000
+DTEND;TZID=Europe/Helsinki:20250209T200000
+SUMMARY:Nordic Conspiracy Vol2.
+DESCRIPTION:Nordic Conspiracy is a series focusing on improvised music, aiming to organize concerts in the Nordic region and strengthen seamless cultural exchange in the field of experimental music.  
+  
+The second gathering features a international lineup of improvisers:  
+  
+Richie Herbst - live-electronics  
+Heli Hartikainen - saxophone  
+Jukka Kääriäinen - guitar  
+Michael Masen - saxophone  
+Teemu Mustonen - drums  
+Michael Prehofer - drums  
+Wilson Tanner Smith - cello  
+Livia Schweizer - flute  
+  
+Doors open at 5:45 PM, music starts at 6:00 PM  
+voluntary fee: 5-20€
+LOCATION:"Nokiantie 2-4, Helsinki"
+URL:https://experimentalsoundingfinland.github.io/experimentalsoundingfinland-v2/2025-02-09/t24a28t3.html
+END:VEVENT
+END:VCALENDAR

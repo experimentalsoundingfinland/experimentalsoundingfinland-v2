@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//helsinki-improvisers-orchestra//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:ro87fegijivd3h99nmi1tmg2rs
+DTSTART;TZID=Europe/Helsinki:20250228T190000
+DTEND;TZID=Europe/Helsinki:20250228T200000
+SUMMARY:Helsinki Improvisers Orchestra
+DESCRIPTION:Helsinki Improvisers Orchestra is an artist collective dedicated to performing free and conducted improvisation as well as other experimental music. The collective is open, with a changing line-up, and its pursuit is to investigate the diversity of artistic expression via musical improvisation. Helsinki Improvisers Orchestra performs in Helsinki once a month - generally in the last friday of the month - in a changing venue.  
+  
+[https://helsinkiimprovisersorchestra.wordpress.com/](https://helsinkiimprovisersorchestra.wordpress.com/)
+LOCATION:"Haapaniemenkatu 14, Helsinki"
+URL:https://experimentalsoundingfinland.github.io/experimentalsoundingfinland-v2/2025-02-28/ro87fegi.html
+END:VEVENT
+END:VCALENDAR
