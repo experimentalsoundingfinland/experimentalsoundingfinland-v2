@@ -95,8 +95,8 @@ events.each do |event|
   DTSTART;TZID=Europe/Helsinki:#{event_start.strftime('%Y%m%dT%H%M%S')}
   DTEND;TZID=Europe/Helsinki:#{event_end.strftime('%Y%m%dT%H%M%S')}
   SUMMARY:#{event['summary']}
-  DESCRIPTION:#{description}
-  LOCATION:"#{event['location'] || 'TBD'}"
+  DESCRIPTION:#{venue}
+  LOCATION:#{event['location'] || 'TBD'}
   URL:https://experimentalsoundingfinland.github.io/experimentalsoundingfinland-v2/#{date_str}/#{id_portion}.html
   END:VEVENT
   END:VCALENDAR
