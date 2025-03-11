@@ -3,8 +3,8 @@ VERSION:2.0
 PRODID:-//metric-2025--4--feeniks-reborn//NONSGML v1.0//EN
 BEGIN:VEVENT
 UID:pfi3j8r0qrpk3cjk04p0ufvb68
-DTSTART:20250220T190000Z
-DTEND:20250220T210000Z
+DTSTART;TZID=Europe/Helsinki:20250220T190000
+DTEND;TZID=Europe/Helsinki:20250220T210000
 SUMMARY:METRIC 2025 #4: Feeniks reborn
 DESCRIPTION:This METRIC concert will be held in the R-talo famous Feeniks Club. The relaxed atmosphere will give a platform for the METRIC students to perform, experiment, stretch boundaries. Extremely importantly for the METRIC experience, this evening will give them the chance to get to know each other, discuss, create connections.   
   

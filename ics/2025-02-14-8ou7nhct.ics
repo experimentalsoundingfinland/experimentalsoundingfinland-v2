@@ -3,8 +3,8 @@ VERSION:2.0
 PRODID:-//anla-courtis--arg-----verde//NONSGML v1.0//EN
 BEGIN:VEVENT
 UID:8ou7nhctqimea7hv5cm6bl83f8
-DTSTART:20250214T190000Z
-DTEND:20250214T220000Z
+DTSTART;TZID=Europe/Helsinki:20250214T190000
+DTEND;TZID=Europe/Helsinki:20250214T220000
 SUMMARY:ANLA COURTIS (ARG) // VERDE
 DESCRIPTION:ANLA COURTIS (ARG):  
 Alan (Anla) Courtis, legendaarisen Reynols-yhtyeen perustajajäsen, työskentelee väsymättä äänitaiteen, elektroakustisen musiikin, drone- ja noise-musiikin, improvisaation ja sävellyksen parissa.  

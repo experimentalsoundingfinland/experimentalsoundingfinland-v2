@@ -3,8 +3,8 @@ VERSION:2.0
 PRODID:-//kokeellisen-musiikin-ilta--muruaga-kohn-mustonen-trio//NONSGML v1.0//EN
 BEGIN:VEVENT
 UID:40aunk8vkd38q9k9ssd0o05shk
-DTSTART:20250216T180000Z
-DTEND:20250216T210000Z
+DTSTART;TZID=Europe/Helsinki:20250216T180000
+DTEND;TZID=Europe/Helsinki:20250216T210000
 SUMMARY:Kokeellisen musiikin ilta: Muruaga/Kohn/Mustonen trio
 DESCRIPTION:Tervetuloa vapaasti improvisoituun kokeellisen musiikin konserttiin jossa kolme akateemista muusikkoa luo äänimaisemia nykyaikaisen improvisoidun musiikin keinoin.<br><br>Artisteista / About the artists: <br>Diego Kohn, a musician and perfomer from Buenos Aires, Argentina, specializes in improvisation and collective musical practices. He teaches improvisation at Zurich University of the Arts and Zurich Conservatory.<br>As a mediator and educator, Diego Kohn has taught collective music creation and improvisation at numerous institutions and universities. Currently based in Zurich.<br>Teemu Mustonen is a percussionist based in Helsinki Finland. Teemu has studied in jazz programs in Malmö and Sibelius Academy in Helsinki. Mustonen investigates the sonic possibilities of prepared percussions in context of free improvisation. Teemu has performed and recorded with variety of musicians in jazz and improvised music. The latest recording features him with Raoul Björkenheim, Mikko Innanen and Juhani Aaltonen.<br>Gon Muruaga is an Argentinian electric guitar player, and improviser, active in the Helsinki and Tallinn artistic scene.<br>His musical approach combines elements of jazz, free improvisation, experimental music, sound investigation, and interdisciplinary cooperation.<br><br>Facebook event: <br><a href="[https://www.facebook.com/events/972571554809610">https://www.facebook.com/events/972571554809610</a> ](https://www.facebook.com/events/972571554809610">https://www.facebook.com/events/972571554809610</a> )
 LOCATION:Kristianinkatu 16, Helsinki

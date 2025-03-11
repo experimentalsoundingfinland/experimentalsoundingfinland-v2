@@ -3,8 +3,8 @@ VERSION:2.0
 PRODID:-//improv-at-hakasalmen-huvila-momentum--mock-nas-muruaga-mustonen-trio//NONSGML v1.0//EN
 BEGIN:VEVENT
 UID:m7lq6p6t9u8pcja37420t0tboc
-DTSTART:20250315T190000Z
-DTEND:20250315T203000Z
+DTSTART;TZID=Europe/Helsinki:20250315T190000
+DTEND;TZID=Europe/Helsinki:20250315T203000
 SUMMARY:Improv at Hakasalmen huvila/Momentum: Mockūnas/Muruaga/Mustonen trio
 DESCRIPTION:Momentumissa lyömäsoittaja Teemu Mustonen,   
 kitaristi Gon Muruaga ja saksofonisti Liudas Mockūnas   

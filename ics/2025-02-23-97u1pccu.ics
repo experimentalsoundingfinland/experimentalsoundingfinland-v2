@@ -3,8 +3,8 @@ VERSION:2.0
 PRODID:-//soiva-taidehalli--tomutonttu//NONSGML v1.0//EN
 BEGIN:VEVENT
 UID:97u1pccuhso75qmrundq9ofodk
-DTSTART:20250223T170000Z
-DTEND:20250223T180000Z
+DTSTART;TZID=Europe/Helsinki:20250223T170000
+DTEND;TZID=Europe/Helsinki:20250223T180000
 SUMMARY:Soiva Taidehalli: Tomutonttu
 DESCRIPTION:Soiva Taidehalli 2025 konserttisarjan ensimmäisessä konsertissa kuullaan kokeellista elektronista musiikkia.  
   

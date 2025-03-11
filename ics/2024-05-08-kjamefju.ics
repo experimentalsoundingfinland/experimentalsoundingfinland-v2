@@ -3,8 +3,8 @@ VERSION:2.0
 PRODID:-//annika-fuhrmann---tom-l-nnqvist//NONSGML v1.0//EN
 BEGIN:VEVENT
 UID:kjamefjubsg070a086c4rfug7k
-DTSTART:20240508T200000Z
-DTEND:20240508T210000Z
+DTSTART;TZID=Europe/Helsinki:20240508T200000
+DTEND;TZID=Europe/Helsinki:20240508T210000
 SUMMARY:ANNIKA FUHRMANN & TOM LÖNNQVIST
 DESCRIPTION:Annika Fuhrmann, ihmisääni & efektit / voice & effects  
 Tom Lönnqvist, modulaarisyntetisaattori / modular synthesizer  

@@ -3,8 +3,8 @@ VERSION:2.0
 PRODID:-//metric-2025--2--or-gans-and-friends//NONSGML v1.0//EN
 BEGIN:VEVENT
 UID:v7ub9s66fu8e2coiu6ht90e5o4
-DTSTART:20250218T193000Z
-DTEND:20250218T204500Z
+DTSTART;TZID=Europe/Helsinki:20250218T193000
+DTEND;TZID=Europe/Helsinki:20250218T204500
 SUMMARY:METRIC 2025 #2: Or­gans and friends
 DESCRIPTION:This concert, held in the Organo Hall of the Helsinki Music Centre, will propose different usages of the multiple organs present in the hall, thanks to the presence within the METRIC network of teachers and students active in performing organ and other historical keyboard instruments. However, different styles of improvisation will be presented, bringing the organ tradition to meet recent experimental practices.   
   

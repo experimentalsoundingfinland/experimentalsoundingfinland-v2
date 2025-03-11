@@ -3,8 +3,8 @@ VERSION:2.0
 PRODID:-//timate-ynts---jiiri-cassette-party//NONSGML v1.0//EN
 BEGIN:VEVENT
 UID:udrlegpu91ui4evso6a4kgotsc
-DTSTART:20250201T050000Z
-DTEND:20250201T220000Z
+DTSTART;TZID=Europe/Helsinki:20250201T050000
+DTEND;TZID=Europe/Helsinki:20250201T220000
 SUMMARY:Timate ynts & Jiiri cassette party
 DESCRIPTION:If you couldn't make it to Tampere, you are forgiven  
 We got it here on tape  

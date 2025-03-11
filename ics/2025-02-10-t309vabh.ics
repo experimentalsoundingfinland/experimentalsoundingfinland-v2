@@ -3,8 +3,8 @@ VERSION:2.0
 PRODID:-//orest-smovzh---kalle-hermanni-autio-complete-works-for-violin-alone-record-release-concert//NONSGML v1.0//EN
 BEGIN:VEVENT
 UID:t309vabh20uo3bm4mkoc1k1dm8
-DTSTART:20250210T190000Z
-DTEND:20250210T200000Z
+DTSTART;TZID=Europe/Helsinki:20250210T190000
+DTEND;TZID=Europe/Helsinki:20250210T200000
 SUMMARY:Orest Smovzh & Kalle Hermanni Autio complete works for violin alone record release concert
 DESCRIPTION:Release presentation of noisy works record by Finnish composer Kalle Hermanni Autio, performed live by Orest Smovzh in Vapaan Taiteen Tila on 10.2.2025 at 19:00.   
 Written between 2020 and 2024, the works present a complete collection of solo violin pieces by the composer, recorded in Puotila in September 2024 by Kaj Mäki-Ullakko, pressed on a 7-inch 45rpm vinyl in Kyläsaari.   

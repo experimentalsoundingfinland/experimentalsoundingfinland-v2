@@ -3,8 +3,8 @@ VERSION:2.0
 PRODID:-//katve---communal-score-happening//NONSGML v1.0//EN
 BEGIN:VEVENT
 UID:2e0u5gr02i8elcfqa7nc1pljvg
-DTSTART:20250214T140000Z
-DTEND:20250214T180000Z
+DTSTART;TZID=Europe/Helsinki:20250214T140000
+DTEND;TZID=Europe/Helsinki:20250214T180000
 SUMMARY:KATVE - COMMUNAL SCORE HAPPENING
 DESCRIPTION:In four hours we will collectively create and perform a score (set of instructions) in Katve.   
   

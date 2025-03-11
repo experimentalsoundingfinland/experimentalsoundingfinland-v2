@@ -3,8 +3,8 @@ VERSION:2.0
 PRODID:-//life-after-meta--where-should-the-community-go-//NONSGML v1.0//EN
 BEGIN:VEVENT
 UID:4v2g83e3vml04bhv7un10ktb3g
-DTSTART:20250209T150000Z
-DTEND:20250209T170000Z
+DTSTART;TZID=Europe/Helsinki:20250209T150000
+DTEND;TZID=Europe/Helsinki:20250209T170000
 SUMMARY:Life after meta: where should the community go?
 DESCRIPTION:The recent political events surrounding X and Meta have given new urgency to the issues behind corporate social media and their unethical, politically unviable and unsustainable practices. Many among us have expressed their wish to leave, but are facing disorientation, fear of isolation and loss of connection as well as useful organisational tools.  
   

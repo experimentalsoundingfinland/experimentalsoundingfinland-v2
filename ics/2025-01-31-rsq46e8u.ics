@@ -3,8 +3,8 @@ VERSION:2.0
 PRODID:-//select-your-player-//NONSGML v1.0//EN
 BEGIN:VEVENT
 UID:rsq46e8uj7vn2b2l21i0iiakc0
-DTSTART:20250131T190000Z
-DTEND:20250131T203000Z
+DTSTART;TZID=Europe/Helsinki:20250131T190000
+DTEND;TZID=Europe/Helsinki:20250131T203000
 SUMMARY:Select your player 
 DESCRIPTION:Select Your Player is an interactive performance where four improvisers take the audience on a  
 sonic journey inspired by game concepts composed specifically for this occasion. In the first piece,  

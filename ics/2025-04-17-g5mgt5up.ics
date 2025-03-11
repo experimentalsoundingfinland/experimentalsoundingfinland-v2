@@ -3,8 +3,8 @@ VERSION:2.0
 PRODID:-//rahina-klubi--2duos--4tet---connections-revisited--lauri-hyv-rinen---jone-takam-ki--jukka-pekka-kervinen---vesa-lehko//NONSGML v1.0//EN
 BEGIN:VEVENT
 UID:g5mgt5up0j23at2lacj6jgrq7o
-DTSTART:20250417T190000Z
-DTEND:20250417T210000Z
+DTSTART;TZID=Europe/Helsinki:20250417T190000
+DTEND;TZID=Europe/Helsinki:20250417T210000
 SUMMARY:Rahina-klubi: 2duos+ 4tet - Connections Revisited_ Lauri Hyvärinen & Jone Takamäki +Jukka-Pekka Kervinen & Vesa Lehko
 DESCRIPTION:The Rahina Club brings together four musicians who have not met for 40 years, 4 months, or something in between!  
 Jone Takamäki has been at the forefront of Finnish free musical expression since the 1980s. In addition to saxophones and clarinet, he is known as a master of Japanese wooden flutes.  

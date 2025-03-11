@@ -3,8 +3,8 @@ VERSION:2.0
 PRODID:-//suhina-klubi--josefiina-vannesluoma//NONSGML v1.0//EN
 BEGIN:VEVENT
 UID:e53uf21ruo8nekrrspep3hotc0
-DTSTART:20250326T190000Z
-DTEND:20250326T210000Z
+DTSTART;TZID=Europe/Helsinki:20250326T190000
+DTEND;TZID=Europe/Helsinki:20250326T210000
 SUMMARY:Suhina Klubi: Josefiina Vannesluoma
 DESCRIPTION:Suhina Klubi serves as a platform for improvised and experimental music and sound art within Helsinki. During the year 2025 we present improvised music ensembles from Finland and abroad.  
   

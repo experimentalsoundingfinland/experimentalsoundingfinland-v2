@@ -3,8 +3,8 @@ VERSION:2.0
 PRODID:-//mercedes-krapovickas---ban-do-neon-res-o-nance--1--neons---neu-trals//NONSGML v1.0//EN
 BEGIN:VEVENT
 UID:fv4e52cneu25ajhs9mu6snlg10
-DTSTART:20250318T190000Z
-DTEND:20250318T204500Z
+DTSTART;TZID=Europe/Helsinki:20250318T190000
+DTEND;TZID=Europe/Helsinki:20250318T204500
 SUMMARY:Mercedes Krapovickas - Ban­do­neon Res­o­nance #1: Neons & Neu­trals
 DESCRIPTION:Bandoneon Resonance #1: Neons & Neutrals is the first of four concerts in Mercedes Krapovickas’ doctoral research project, Bandoneon Resonance: Exploring Contemporary Soundscapes. This solo bandoneon and live-electronics performance explores the instrument’s transformation through extended techniques, movement, and technology, turning the bandoneon into an augmented instrument and Krapovickas into an augmented performer. The multichannel concert explores how traditional instruments can transform through electronic interaction.  
   

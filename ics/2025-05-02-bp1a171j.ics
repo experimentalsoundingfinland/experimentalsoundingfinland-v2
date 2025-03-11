@@ -3,8 +3,8 @@ VERSION:2.0
 PRODID:-//soundscapes--5---day-1//NONSGML v1.0//EN
 BEGIN:VEVENT
 UID:bp1a171ju0thseim9t85k94mfk
-DTSTART:20250502T191500Z
-DTEND:20250502T211500Z
+DTSTART;TZID=Europe/Helsinki:20250502T191500
+DTEND;TZID=Europe/Helsinki:20250502T211500
 SUMMARY:SoundScapes #5 - Day 1
 DESCRIPTION:Allbee, Calcanile, Edwards, Freedman, Castrillón, Kaufmann, Kujala, Mureddu, Kääriäinen, Schiaffini, Sjöström, Wachsmann, Vandeweyer  
   

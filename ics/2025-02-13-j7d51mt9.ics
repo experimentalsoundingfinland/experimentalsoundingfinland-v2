@@ -3,8 +3,8 @@ VERSION:2.0
 PRODID:-//interventio-1--anla-courtis--tomutonttu//NONSGML v1.0//EN
 BEGIN:VEVENT
 UID:j7d51mt9hc5tm9vib6vhdninr8
-DTSTART:20250213T160000Z
-DTEND:20250213T180000Z
+DTSTART;TZID=Europe/Helsinki:20250213T160000
+DTEND;TZID=Europe/Helsinki:20250213T180000
 SUMMARY:Interventio 1: Anla Courtis, Tomutonttu
 DESCRIPTION:Circle’s PISTE exhibition at the Pori Art Museum will also serve as a venue for a series of musical visits and interventions, kind of artistic intermissions. The series of performances will begin on Thursday 13 February at 16:00 with Anla Courtis and Tomutonttu. The artists have been invited by Jussi Lehtisalo of Circle and Ektro Records. The performances are included in the price of the museum ticket.  
   

@@ -3,8 +3,8 @@ VERSION:2.0
 PRODID:-//metric-2025--5--final-concert//NONSGML v1.0//EN
 BEGIN:VEVENT
 UID:hoheji007qk25astjfh487hetk
-DTSTART:20250221T193000Z
-DTEND:20250221T204500Z
+DTSTART;TZID=Europe/Helsinki:20250221T193000
+DTEND;TZID=Europe/Helsinki:20250221T204500
 SUMMARY:METRIC 2025 #5: Final concert
 DESCRIPTION:In the final concert the audience will be able to see all the work that has been done during the intensive five days of METRIC 25 Helsinki, during the morning lessons and the afternoon workshops. Be ready for a most diverse and adventurous evening!   
   
