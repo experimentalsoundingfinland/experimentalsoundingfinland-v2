@@ -86,6 +86,7 @@ events.each do |event|
   CONTENT
 
   # Generate ICS file
+  date_parts = date_str.split('-')
   ics_content = <<~ICS
   BEGIN:VCALENDAR
   VERSION:2.0
@@ -97,7 +98,7 @@ events.each do |event|
   SUMMARY:#{event['summary']}
   DESCRIPTION:#{venue}
   LOCATION:#{event['location'] || 'TBD'}
-  URL:https://experimentalsoundingfinland.github.io/experimentalsoundingfinland-v2/#{filename.split('-').first}/#{filename.split('-').last.chomp('.md')}.html
+  URL:https://experimentalsoundingfinland.github.io/experimentalsoundingfinland-v2/#{date_parts[0]}/#{date_parts[1]}/#{date_parts[2]}/#{id_portion}.html
   END:VEVENT
   END:VCALENDAR
   ICS
