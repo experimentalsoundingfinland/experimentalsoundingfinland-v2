@@ -97,7 +97,7 @@ events.each do |event|
   SUMMARY:#{event['summary']}
   DESCRIPTION:#{venue}
   LOCATION:#{event['location'] || 'TBD'}
-  URL:https://experimentalsoundingfinland.github.io/experimentalsoundingfinland-v2/#{date_str}/#{id_portion}.html
+  URL:https://experimentalsoundingfinland.github.io/experimentalsoundingfinland-v2/#{filename.split('-').first}/#{filename.split('-').last.chomp('.md')}.html
   END:VEVENT
   END:VCALENDAR
   ICS
