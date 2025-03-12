@@ -11,10 +11,11 @@ layout: null
     <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
     <generator>Jekyll v{{ jekyll.version }}</generator>
+    {% for post in site.posts %}
     <item>
       <title>{{ post.event_start | date: "%Y-%m-%d %H:%M" }} - {{ post.title | xml_escape }}</title>
       <description>{{ post.content | xml_escape }}</description>
-      <pubDate>{{ post.created_date | date_to_rfc822 }}</pubDate>
+      <pubDate>{{ post.created_date | date: "%d.%m.%y" }}</pubDate>
       <link>{{ site.url }}{{ site.baseurl }}{{ post.url }}</link>
       <guid isPermaLink="true">{{ site.url }}{{ site.baseurl }}{{ post.url }}</guid>
     </item>
