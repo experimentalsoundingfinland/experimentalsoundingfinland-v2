@@ -129,8 +129,8 @@ a:hover {
   }
 }
 
-.post-title,
-.post-content h1 {
+.post-title, 
+.post-content h1 { // make the post title smaller, from the original 2.6rem
   @include relative-font-size(2.2);
   letter-spacing: -1px;
   line-height: 1.15;
