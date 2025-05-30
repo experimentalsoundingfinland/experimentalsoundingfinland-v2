@@ -2,12 +2,12 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//kokeellisen-musiikin-ja-tanssin-ilta--kuikka-kervinen-ja-ima-koko-watashi-----//NONSGML v1.0//EN
 BEGIN:VEVENT
-UID:3imu3lc0cenbp4heojfsqprtd4
+UID:gslo4o9c2bbobku7b7e6mkvneg
 DTSTART;TZID=Europe/Helsinki:20250602T190000
 DTEND;TZID=Europe/Helsinki:20250602T213000
 SUMMARY:Kokeellisen musiikin ja tanssin ilta: Kuikka&Kervinen ja Ima Koko Watashi 今ここ私
 DESCRIPTION:Asbestos Art Space
 LOCATION:Kristianinkatu 16, Helsinki
-URL:https://experimentalsoundingfinland.github.io/experimentalsoundingfinland-v2/2025/06/02/3imu3lc0.html
+URL:https://experimentalsoundingfinland.github.io/experimentalsoundingfinland-v2/2025/06/02/gslo4o9c.html
 END:VEVENT
 END:VCALENDAR
